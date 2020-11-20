@@ -9,6 +9,7 @@
         <p>
             <asp:Button ID="btnSair" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Sair" OnClick="btnSair_Click" />
         </p>
+        <asp:Label ID="lblAviso" runat="server"></asp:Label>
     </div>
 
     <div class="row">
@@ -75,12 +76,13 @@
         </div>
         <div class="col-md-4" style="text-align: right">
             <h6>
-                &nbsp;</h6>
+                <asp:Button ID="btnLimpar" runat="server" OnClick="Button1_Click" style="margin-left: 45px" Text="Limpar" Width="124px" />
+            </h6>
             <h6>
                 &nbsp;</h6>
             <h6>
                 <asp:Button ID="btnExcluir" runat="server" Text="Excluir" OnClick="btnExcluir_Click" />
-                <asp:Button ID="btnEditar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Editar" />
+                <asp:Button ID="btnEditar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Editar" OnClick="btnEditar_Click1" />
                 <asp:Button ID="btnCadastrar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Cadastrar" OnClick="btnCadastrar_Click" />
             </h6>
         </div>
