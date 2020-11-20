@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CadastroDePessoas.Models
 {
-    public class PessoaDAO
+    public class comPessoaDAO
     {
 
     }

@@ -13,16 +13,12 @@ namespace CadastroDePessoas
     {
         public object MessageBox { get; private set; }
 
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+               
         protected void TextBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -38,23 +34,20 @@ namespace CadastroDePessoas
 
         }
 
-        protected void btnEditar_Click(object sender, EventArgs e)
-        {
-
-        }
-
+              
         protected void btnSair_Click(object sender, EventArgs e)
         {
-            close();
+            Close();
         }
 
-        private void close()
+        private void Close()
         {
             throw new NotImplementedException();
         }
 
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
+            
             string strcon = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\ANA PAULA\Documents\UNIP SISTEMAS ANA PAULA\TERCEIRO SEMESTRE\PIM VIII\CadastroDePessoas\CadastroDePessoas\obj\Debug\Database1.mdb";
             string comandoEndereco = "INSERT INTO Database1 (Logradouro, Numero, CEP, Bairro, Cidade, Estado)values (@Logradouro, @Numero, @CEP, @Bairro, @Cidade, @Estado)";
             string comandoPessoa = "INSERT INTO Database1 (Nome, CPF, Email,Telefone, Endereco) values (@Nome, @CPF, @Email,@Telefone, @Endereco)";
@@ -297,9 +290,8 @@ namespace CadastroDePessoas
                 con.Close();
             }
         }
-
-       
-        protected void Button1_Click(object sender, EventArgs e)
+ 
+        protected void botaoLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
             txtConsulta.Text = "";
@@ -314,9 +306,6 @@ namespace CadastroDePessoas
             txtBairro.Text = "";
             txtCidade.Text = "";
             txtEstado.Text = "";
-
-
-
         }
     }
 } 

@@ -240,13 +240,22 @@ namespace CadastroDePessoas
         protected global::System.Web.UI.WebControls.TextBox txtEstado;
 
         /// <summary>
-        /// Controle btnLimpar.
+        /// Controle btnCadastrar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLimpar;
+        protected global::System.Web.UI.WebControls.Button btnCadastrar;
+
+        /// <summary>
+        /// Controle botaoLimpar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button botaoLimpar;
 
         /// <summary>
         /// Controle btnExcluir.
@@ -265,14 +274,5 @@ namespace CadastroDePessoas
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditar;
-
-        /// <summary>
-        /// Controle btnCadastrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadastrar;
     }
 }

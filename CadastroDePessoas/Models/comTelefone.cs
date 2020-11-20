@@ -6,12 +6,12 @@ using System.Web;
 
 namespace CadastroDePessoas.Models
 {
-    public class Telefone
+    public class comTelefone
     {
         [Key]
         protected int idTelefone { get; set; }
         public int numero { get; set; }
         public int ddd { get; set; }
-        public TipoTelefone tipo { get; set; }
+        public comTelefoneTipo tipo { get; set; }
     }
 }

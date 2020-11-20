@@ -6,7 +6,7 @@ using System.Web;
 
 namespace CadastroDePessoas.Models
 {
-    public class TipoTelefone
+    public class comTelefoneTipo
     {
         [Key]
         protected int idTipoTelefone { get; set; }

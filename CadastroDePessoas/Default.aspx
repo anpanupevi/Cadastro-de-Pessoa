@@ -75,14 +75,14 @@
         </div>
         <div class="col-md-4" style="text-align: right">
             <h6>
-                <asp:Button ID="btnLimpar" runat="server" OnClick="Button1_Click" style="margin-left: 45px" Text="Limpar" Width="86px" />
+                <asp:Button ID="btnCadastrar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Cadastrar" OnClick="btnCadastrar_Click" />
             </h6>
             <h6>
                 &nbsp;</h6>
             <h6>
+                <asp:Button ID="botaoLimpar" runat="server" OnClick="botaoLimpar_Click" Text="Limpar" />
                 <asp:Button ID="btnExcluir" runat="server" Text="Excluir" OnClick="btnExcluir_Click" />
                 <asp:Button ID="btnEditar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Editar" OnClick="btnEditar_Click1" />
-                <asp:Button ID="btnCadastrar" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Cadastrar" OnClick="btnCadastrar_Click" />
             </h6>
         </div>
         <div class="text-right">
