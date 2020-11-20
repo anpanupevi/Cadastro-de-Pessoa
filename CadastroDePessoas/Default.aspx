@@ -9,7 +9,6 @@
         <p>
             <asp:Button ID="btnSair" runat="server" style="font-family: 'Times New Roman', Times, serif" Text="Sair" OnClick="btnSair_Click" />
         </p>
-        <asp:Label ID="lblAviso" runat="server"></asp:Label>
     </div>
 
     <div class="row">
@@ -23,7 +22,7 @@
             <h2 id="lblTelefone" style="font-size: large" class="text-right">
                 <asp:Label ID="lblNome" runat="server" style="font-size: large; font-family: 'Times New Roman', Times, serif" Text="Nome   "></asp:Label>
                 <asp:TextBox ID="txtNome" runat="server" style="font-family: 'Times New Roman', Times, serif" Width="629px" OnTextChanged="txtNome_TextChanged"></asp:TextBox>
-            </h2>
+           </h2>
             <h2 id="lblTelefone0" style="font-size: large" class="text-right">
                 <asp:Label ID="lblEmail" runat="server" style="font-size: large; font-family: 'Times New Roman', Times, serif" Text="E-mail  "></asp:Label>
                 <asp:TextBox ID="txtEmail" runat="server" style="font-family: 'Times New Roman', Times, serif" Width="629px" OnTextChanged="txtNome_TextChanged" TextMode="Email"></asp:TextBox>
@@ -76,7 +75,7 @@
         </div>
         <div class="col-md-4" style="text-align: right">
             <h6>
-                <asp:Button ID="btnLimpar" runat="server" OnClick="Button1_Click" style="margin-left: 45px" Text="Limpar" Width="124px" />
+                <asp:Button ID="btnLimpar" runat="server" OnClick="Button1_Click" style="margin-left: 45px" Text="Limpar" Width="86px" />
             </h6>
             <h6>
                 &nbsp;</h6>

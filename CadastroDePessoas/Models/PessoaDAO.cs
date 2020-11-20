@@ -7,6 +7,10 @@ namespace CadastroDePessoas.Models
 {
     public class PessoaDAO
     {
-        
+
     }
-}
+    
+           
+        }
+        
+    

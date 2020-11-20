@@ -99,11 +99,16 @@ namespace CadastroDePessoas
                 comPessoa_Telefone.ExecuteNonQuery();
                 comTelefone.ExecuteNonQuery();
                 comTelefone_Tipo.ExecuteNonQuery();
-                lblAviso.Text = " Cadastro Efetuado Com Sucesso!";
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Sucesso",
+                    "alert('Cadastro Efetuado Com Sucesso!');", true);
+                
             }
             catch (Exception E)
             {
-               lblAviso.Text = " Erro ao Cadastrar!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Erro",
+                    "alert('Erro ao Cadastrar!');", true);
+                
             }
             finally
             {
@@ -159,7 +164,9 @@ namespace CadastroDePessoas
             }
             catch (Exception E)
             {
-               lblAviso.Text = "Nome não Cadastrado!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Aviso",
+                     "alert('Nome Não Cadaastrado!');", true);
+               
             }
             finally
             {
@@ -210,12 +217,17 @@ namespace CadastroDePessoas
                 comPessoa_Telefone.ExecuteNonQuery();
                 comTelefone.ExecuteNonQuery();
                 comTelefone_Tipo.ExecuteNonQuery();
-                lblAviso.Text = "Cadastro Excluido com Sucesso!";
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Sucesso",
+                    "alert('Cadastro EXcluido Com Sucesso!');", true);
+                
 
             }
             catch (Exception E)
             {
-                lblAviso.Text = "Erro ao Excluir!";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "ERRO",
+                    "alert('Erro ao Excluir!');", true);
+                
             }
             finally
             {
@@ -270,10 +282,15 @@ namespace CadastroDePessoas
                 comPessoa.ExecuteNonQuery();
                 comPessoa_Telefone.ExecuteNonQuery();
                 comTelefone.ExecuteNonQuery();
-                lblAviso.Text = "Dados Alterado com Sucesso";            }
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Sucesso",
+                    "alert('Dados Alterado Com Sucesso!');", true);
+                          }
             catch (Exception E)
             {
-               lblAviso.Text = "Error ao Alterar";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "ERRO",
+                    "alert('Erro ao Alterar!');", true);
+               
             }
             finally
             {
